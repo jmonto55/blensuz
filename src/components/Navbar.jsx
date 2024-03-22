@@ -45,31 +45,6 @@ const Navbar = () => {
           </li>
           ))}
       </ul>
-      <div className="sm:hidden flex flex-1 justify-end items-center">
-          <div
-          ref={ref1}
-          className={`${!toggle ? 'ease-in-out duration-700 -right-40 -top-10 opacity-0' : 'ease-out duration-700 top-16 right-8 opacity-100'} shadow-5xl border-2 border-t-0 border-l-0 border-black/25 backdrop-filter backdrop-blur-sm flex p-6 black-gradient absolute mx-4 my-2 min-w-[140px] z-10 rounded-xl dark:bg-gradient-to-r from-slate-100 to-slate-300  dark:text-neutral-900`}
-          >
-          <ul className="list-none flex justify-end items-start flex-col gap-4">
-              {navLinks.map((link) => (
-              <li
-                  key={link.id}
-                  className={`${
-                  active === link.title
-                      ? "text-white"
-                      : "text-[##d0cecf]"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
-                  setActive(link.title);
-                  setToggle(!toggle);
-                  }}
-              >
-                  <a href={`#${link.id}`}>{link.title}</a>
-              </li>
-              ))}
-          </ul>
-          </div>
-      </div>
     </nav>
   )
 }

@@ -42,7 +42,7 @@ const App = () => {
   ];
 
   return (
-    <div className="pt-4 w-full h-full flex flex-col items-center bg-[#00010e]">
+    <div className="overflow-x-hidden pt-4 w-full h-full flex flex-col items-center bg-[#00010e]">
       <header className="h-[700px] w-full max-w-[1800px] bg-center w-max-[100px] bg-no-repeat flex flex-col items-center">
         <Navbar />
         <img src={header} alt="Hero" className="opacity-80 max-w-[1800px] w-full h-full object-cover absolute top-0" />
