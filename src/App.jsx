@@ -16,6 +16,7 @@ import { FaPhone } from "react-icons/fa6";
 import ScrollUpButton from "./components/ScrollUpButton";
 import header from "./assets/header.jpg";
 import logo from "./assets/logo.png";
+import logo2 from "./assets/logo2.png";
 import boat from "./assets/boat.jpg";
 import logistics from "./assets/logistics.jpg";
 import exportt from "./assets/exportt.jpeg";
@@ -46,8 +47,8 @@ const App = () => {
       <header className="h-[700px] w-full max-w-[1800px] bg-center w-max-[100px] bg-no-repeat flex flex-col items-center">
         <Navbar />
         <img src={header} alt="Hero" className="opacity-80 max-w-[1800px] w-full h-full object-cover absolute top-0" />
-        <div className="z-20 absolute mt-32 gap-8 flex flex-col items-center w-[380px] text-white text-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 py-10 px-6 text-center rounded-2xl bg-[#00010e] shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
-          <img src={logo} alt="Logo" className="w-52 mb-10" />
+        <div className="z-20 absolute mt-32 gap-8 flex flex-col items-center w-[380px] text-white text-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 py-12 px-6 text-center rounded-2xl bg-[#00010e] shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
+          <img src={logo} alt="Logo" className="w-44" />
           <p>
             Logística Blensuz
           </p>
@@ -57,15 +58,15 @@ const App = () => {
         </div>
       </header>
       <main className="max-w-[1800px] flex flex-col items-center w-full relative bg-gradient-to-t from-[#373949] to-[#00010e]">
-        <section id="about" className="opacity-100 p-8 sm:p-16 pt-20 flex flex-col items-center text-center text-white w-full mb-4">
-          <h2 className="text-4xl font-bold mb-10">¿Quiénes somos?</h2>
+        <section id="about" className="opacity-100 p-8 sm:p-16 flex flex-col items-center text-center text-white w-full mb-4">
+          <h2 className="text-4xl font-bold mb-10 mt-10">¿Quiénes somos?</h2>
           <p className="my-4 tracking-wider leading-relaxed text-2xl">
             Somos especialistas en la exportación e importación de mercancías, ofreciendo soluciones integrales personalizadas destinadas a las estrategias que plantea el comercio nacional e internacional.
           </p>
           <p className="my-4 tracking-wider leading-relaxed text-2xl">
             Contamos con una amplia experiencia y un equipo de profesionales altamente cualificados, lo que nos permite garantizar un servicio <b>EFICIENTE</b>, <b>SEGURO</b> y acorde a las regulaciones <b>GLOBALES</b>.
           </p>
-          <div className="flex w-full justify-evenly text-4xl my-20">
+          <div className="flex w-full justify-evenly text-4xl mt-20 mb-10">
             <IoBoatSharp className="hover:scale-125" />
             <ImAirplane className="hover:scale-125" />
             <FaTruckMoving className="hover:scale-125" />
@@ -73,7 +74,7 @@ const App = () => {
         </section>
         <section id="" className="relative w-full bg-slate-300">
           <div className="w-full flex justify-center">
-            <img src={boat} alt="Hero" className="hidden md:block w-1/2 object-cover " />
+            <img src={boat} alt="Hero" className="hidden md:block w-1/2 object-cover max-h-[700px]" />
             <div className="px-5 sm:px-10 flex flex-col justify-evenly text-center md:w-1/2 tracking-wider leading-relaxed">
               <div>
                 <h3 className="font-bold text-3xl mt-14 mb-4">Misión</h3>
@@ -150,7 +151,7 @@ const App = () => {
         <section id="contacto" className="bg-slate-300 py-20 w-full h-full">
           <div className="flex justify-evenly items-center flex-wrap">
             <div className="w-full sm:w-1/2 flex flex-col items-center">
-              <img src={logo} alt="Logo" className="w-52 mb-10" />
+              <img src={logo2} alt="Logo" className="w-[380px] mb-10" />
               <h3 className="font-bold">Logística Blensuz S.A.S.</h3>
               <div className="font-bold w-full flex justify-evenly mb-20 text-md flex-wrap">
                 <div className="flex items-center gap-2">
