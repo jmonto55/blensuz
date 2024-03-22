@@ -1,5 +1,5 @@
-import Navbar from "./assets/components/Navbar";
-import Modal from "./assets/components/Modal";
+import Navbar from "./components/Navbar";
+import Modal from "./components/Modal";
 import { useState } from "react";
 import { IoBoatSharp } from "react-icons/io5";
 import { ImAirplane } from "react-icons/im";
@@ -13,7 +13,15 @@ import { GiHandTruck } from "react-icons/gi";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
-import ScrollUpButton from "./assets/components/ScrollUpButton";
+import ScrollUpButton from "./components/ScrollUpButton";
+import header from "./assets/header.jpg";
+import logo from "./assets/logo.png";
+import boat from "./assets/boat.jpg";
+import logistics from "./assets/logistics.jpg";
+import exportt from "./assets/exportt.jpeg";
+import importt from "./assets/importt.jpg";
+import consult from "./assets/consult.jpg";
+import car1 from "./assets/car1.jpeg";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -25,21 +33,21 @@ const App = () => {
   };
 
   const servicesData = [
-    {service: "Asesoría en comercio internacional", perks: ["Análisis de mercados nacionales e internacionales", "Asesoramiento en regulaciones y normativas del comercio exterior", "Estrategias de entrada a nuevos mercados"], picture: "../public/header.jpg"},
-    {service: "Gestión de exportaciones", perks: ["Búsqueda y selección de compradores/mercados potenciales", "Negociación de términos y condiciones comerciales", "Preparación y tramite de documentos de exportación", "Coordinación logística y trasporte nacional e internacional"], picture: "../public/import.jpg"},
-    {service: "Gestión de importaciones", perks: ["Negociación de compras y contratos nacionales e internacional", "Gestión de aduanas y tramitación de documentación", "Coordinación en la recepción y distribución de mercancías"], picture: "../public/export.jpeg"},
-    {service: "Importación de vehículos", perks: ["Análisis de mercados nacionales e internacionales", "Asesoramiento en regulaciones y normativas del comercio exterior", "Estrategias de entrada a nuevos mercados"], picture: "../public/car1.jpeg"},
-    {service: "Logística y distribución", perks: ["Servicios logísticos integrales: Transporte Marítimo, aéreo y terrestre", "Almacenamiento, manejo, distribución", "Seguimiento y control"], picture: "../public/logistics.jpg"},
-    {service: "Consultoria personalizada", perks: ["Manejo de procesos de exportación e importación", "Asesoramiento personalizado de acuerdo a tus requerimientos específicos", "Estrategias de entrada a nuevos mercados"], picture: "../public/consult.jpg"},
+    {service: "Asesoría en comercio internacional", perks: ["Análisis de mercados nacionales e internacionales", "Asesoramiento en regulaciones y normativas del comercio exterior", "Estrategias de entrada a nuevos mercados"], picture: header},
+    {service: "Gestión de exportaciones", perks: ["Búsqueda y selección de compradores/mercados potenciales", "Negociación de términos y condiciones comerciales", "Preparación y tramite de documentos de exportación", "Coordinación logística y trasporte nacional e internacional"], picture: importt},
+    {service: "Gestión de importaciones", perks: ["Negociación de compras y contratos nacionales e internacional", "Gestión de aduanas y tramitación de documentación", "Coordinación en la recepción y distribución de mercancías"], picture: exportt},
+    {service: "Importación de vehículos", perks: ["Análisis de mercados nacionales e internacionales", "Asesoramiento en regulaciones y normativas del comercio exterior", "Estrategias de entrada a nuevos mercados"], picture: car1},
+    {service: "Logística y distribución", perks: ["Servicios logísticos integrales: Transporte Marítimo, aéreo y terrestre", "Almacenamiento, manejo, distribución", "Seguimiento y control"], picture: logistics},
+    {service: "Consultoria personalizada", perks: ["Manejo de procesos de exportación e importación", "Asesoramiento personalizado de acuerdo a tus requerimientos específicos", "Estrategias de entrada a nuevos mercados"], picture: consult},
   ];
 
   return (
     <div className="pt-4 w-full h-full flex flex-col items-center bg-[#00010e]">
       <header className="h-[700px] w-full max-w-[1800px] bg-center w-max-[100px] bg-no-repeat flex flex-col items-center">
         <Navbar />
-        <img src="../public/header.jpg" alt="Hero" className="opacity-80 max-w-[1800px] w-full h-full object-cover absolute top-0" />
+        <img src={header} alt="Hero" className="opacity-80 max-w-[1800px] w-full h-full object-cover absolute top-0" />
         <div className="z-20 absolute mt-32 gap-8 flex flex-col items-center w-[400px] text-white text-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 py-10 px-6 text-center rounded-2xl bg-[#00010e] shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
-          <img src="../../../public/logo.png" alt="Logo" className="w-52 mb-10" />
+          <img src={logo} alt="Logo" className="w-52 mb-10" />
           <p>
             Logística Blensuz
           </p>
@@ -65,7 +73,7 @@ const App = () => {
         </section>
         <section id="" className="relative w-full bg-slate-300">
           <div className="w-full flex justify-center">
-            <img src="../public/boat.jpg" alt="Hero" className="hidden md:block w-1/2 object-cover " />
+            <img src={boat} alt="Hero" className="hidden md:block w-1/2 object-cover " />
             <div className="px-10 flex flex-col justify-evenly text-center md:w-1/2 tracking-wider leading-relaxed">
               <div>
                 <h3 className="font-bold text-3xl mt-14 mb-4">Misión</h3>
@@ -142,7 +150,7 @@ const App = () => {
         <section id="contacto" className="bg-slate-300 py-20 w-full h-full">
           <div className="flex justify-evenly items-center flex-wrap">
             <div className="w-full sm:w-1/2 flex flex-col items-center">
-              <img src="../../../public/logo.png" alt="Logo" className="w-52 mb-10" />
+              <img src={logo} alt="Logo" className="w-52 mb-10" />
               <h3 className="font-bold">Logística Blensuz S.A.S.</h3>
               <div className="font-bold w-full flex justify-evenly mb-20 text-md flex-wrap">
                 <div className="flex items-center gap-2">
