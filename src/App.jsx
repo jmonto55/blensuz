@@ -57,7 +57,7 @@ const App = () => {
         </div>
       </header>
       <main className="max-w-[1800px] flex flex-col items-center w-full relative bg-gradient-to-t from-[#373949] to-[#00010e]">
-        <section id="about" className="opacity-100 p-16 pt-20 flex flex-col items-center text-center text-white w-full mb-4">
+        <section id="about" className="opacity-100 p-8 sm:p-16 pt-20 flex flex-col items-center text-center text-white w-full mb-4">
           <h2 className="text-4xl font-bold mb-10">¿Quiénes somos?</h2>
           <p className="my-4 tracking-wider leading-relaxed text-2xl">
             Somos especialistas en la exportación e importación de mercancías, ofreciendo soluciones integrales personalizadas destinadas a las estrategias que plantea el comercio nacional e internacional.
@@ -99,7 +99,7 @@ const App = () => {
               </div>
               <div className="flex flex-col w-1/2 min-w-[350px] max-w-[500px]">
                 <h3 className="font-bold text-3xl mb-8">Detalles</h3>
-                <ul className="text-2xl flex flex-col gap-2">
+                <ul className="text-xl sm:text-2xl flex flex-col gap-2">
                   {modalData.perks.map((perk, index) => (
                     <li key={index}>- {perk}.</li>
                   ))}
@@ -187,9 +187,9 @@ const App = () => {
             </div>
           </div>
         </section>
-        <footer className="bg-slate-300 w-full text-center py-10 relative">
+        <footer className="bg-slate-300 w-full text-center py-10 relative pb-20">
           <p>2024 Blensuz SAS, all rights reserved</p>
-          <ScrollUpButton />
+          <ScrollUpButton/>
         </footer>
         
       </main>
