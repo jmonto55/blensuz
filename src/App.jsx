@@ -74,7 +74,7 @@ const App = () => {
         <section id="" className="relative w-full bg-slate-300">
           <div className="w-full flex justify-center">
             <img src={boat} alt="Hero" className="hidden md:block w-1/2 object-cover " />
-            <div className="px-10 flex flex-col justify-evenly text-center md:w-1/2 tracking-wider leading-relaxed">
+            <div className="px-5 sm:px-10 flex flex-col justify-evenly text-center md:w-1/2 tracking-wider leading-relaxed">
               <div>
                 <h3 className="font-bold text-3xl mt-14 mb-4">Misión</h3>
                 <p className=" text-xl">
@@ -98,7 +98,7 @@ const App = () => {
                 <img src={modalData.picture} alt="Service" className="w-5/6 rounded-xl" />
               </div>
               <div className="flex flex-col w-1/2 min-w-[350px] max-w-[500px]">
-                <h3 className="font-bold text-3xl mb-8">Detalles</h3>
+                <h3 className="font-bold text-3xl mb-6 hidden 2xl:block">Detalles</h3>
                 <ul className="text-xl sm:text-2xl flex flex-col gap-2">
                   {modalData.perks.map((perk, index) => (
                     <li key={index}>- {perk}.</li>
@@ -172,7 +172,7 @@ const App = () => {
             </div>
             <div>
               <div className="mb-8 flex flex-col items-center gap-2 font-bold">
-                <p className="text-center text-2xl">
+                <p className="text-center text-2xl mt-10">
                   ¿Tienes alguna duda o inquietud? ¡Contáctanos!
                 </p>
                 <p className="text-center text-2xl">
@@ -180,9 +180,9 @@ const App = () => {
                 </p>
               </div>
               <form className="flex flex-col items-center gap-4">
-                <input type="text" placeholder="Nombre" className="w-[400px] p-4 bg-[#00010e] text-white rounded-xl" />
-                <textarea placeholder="Mensaje" className="w-[400px] h-[200px] p-4 bg-[#00010e] text-white rounded-xl" />
-                <button className="w-[400px] p-4 bg-[#00010e] text-white rounded-xl">Enviar</button>
+                <input type="text" placeholder="Nombre" className="w-[360px] p-4 bg-[#00010e] text-white rounded-xl" />
+                <textarea placeholder="Mensaje" className="w-[360px] h-[200px] p-4 bg-[#00010e] text-white rounded-xl" />
+                <button className="w-[360px] p-4 bg-[#00010e] text-white rounded-xl">Enviar</button>
               </form>
             </div>
           </div>
