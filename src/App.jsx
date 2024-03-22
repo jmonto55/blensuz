@@ -92,12 +92,12 @@ const App = () => {
         </section>
         <section id="servicios" className="pb-20 text-white opacity-100 relative w-full bg-gradient-to-t from-[#151625] to-[#00010e]">
           <Modal open={open} onClose={() => setOpen(false)}>
-            <div className="flex text-start">
-              <div className="w-3/4">
+            <div className="flex text-start flex-wrap justify-evenly gap-4">
+              <div className="w-1/2 min-w-[350px]">
                 <h3 className="text-start font-bold text-4xl mb-8">{modalData.service}</h3>
-                <img src={modalData.picture} alt="Service" className="w-5/6 rounded-xl" />
+                <img src={modalData.picture} alt="Service" className=" rounded-xl" />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col w-1/2 min-w-[350px] max-w-[500px]">
                 <h3 className="font-bold text-3xl mb-8">Detalles</h3>
                 <ul className="text-2xl flex flex-col gap-2">
                   {modalData.perks.map((perk, index) => (
