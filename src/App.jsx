@@ -95,7 +95,7 @@ const App = () => {
             <div className="flex text-start flex-wrap justify-evenly gap-4">
               <div className="w-1/2 min-w-[350px]">
                 <h3 className="text-start font-bold text-4xl mb-8">{modalData.service}</h3>
-                <img src={modalData.picture} alt="Service" className=" rounded-xl" />
+                <img src={modalData.picture} alt="Service" className="w-5/6 rounded-xl" />
               </div>
               <div className="flex flex-col w-1/2 min-w-[350px] max-w-[500px]">
                 <h3 className="font-bold text-3xl mb-8">Detalles</h3>
