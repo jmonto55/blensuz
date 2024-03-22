@@ -46,7 +46,7 @@ const App = () => {
       <header className="h-[700px] w-full max-w-[1800px] bg-center w-max-[100px] bg-no-repeat flex flex-col items-center">
         <Navbar />
         <img src={header} alt="Hero" className="opacity-80 max-w-[1800px] w-full h-full object-cover absolute top-0" />
-        <div className="z-20 absolute mt-32 gap-8 flex flex-col items-center w-[400px] text-white text-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 py-10 px-6 text-center rounded-2xl bg-[#00010e] shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
+        <div className="z-20 absolute mt-32 gap-8 flex flex-col items-center w-[380px] text-white text-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 py-10 px-6 text-center rounded-2xl bg-[#00010e] shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
           <img src={logo} alt="Logo" className="w-52 mb-10" />
           <p>
             Logística Blensuz
