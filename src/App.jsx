@@ -90,7 +90,7 @@ const App = () => {
             </div>
           </div>
         </section>
-        <section id="servicios" className="pb-20 text-white opacity-100 relative w-full bg-gradient-to-t from-[#151625] to-[#00010e]">
+        <section id="servicios" className="pb-20 text-white opacity-100 relative w-full bg-[#151625]">
           <Modal open={open} onClose={() => setOpen(false)}>
             <div className="flex text-start flex-wrap justify-evenly gap-4">
               <div className="w-1/2 min-w-[350px]">
