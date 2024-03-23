@@ -11,8 +11,12 @@ import { IoCarSportSharp } from "react-icons/io5";
 import { GrUserExpert } from "react-icons/gr";
 import { GiHandTruck } from "react-icons/gi";
 import { FaLocationDot } from "react-icons/fa6";
+import { FaHandsHelping } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
+import { FaTree } from "react-icons/fa6";
+import { MdBiotech } from "react-icons/md";
+import { FaBook } from "react-icons/fa";
 import ScrollUpButton from "./components/ScrollUpButton";
 import header from "./assets/header.jpg";
 import logo from "./assets/logo.png";
@@ -23,6 +27,7 @@ import exportt from "./assets/exportt.jpeg";
 import importt from "./assets/importt.jpg";
 import consult from "./assets/consult.jpg";
 import car1 from "./assets/car1.jpeg";
+import treeleaf from "./assets/treeleaf.jpg";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -145,6 +150,42 @@ const App = () => {
                 <GrUserExpert className="text-4xl" />
               </div>
               <h3 className="font-bold text-3xl text-left">Consultoria personalizada</h3>
+            </div>
+          </div>
+        </section>
+        <section className="w-full bg-gradient-to-t from-[#151625] to-[#00010e]">
+          <div className="flex justify-center w-full">
+            <img src={treeleaf} alt="Logo" className="hidden xl:block w-[500px]" />
+            <div className="flex flex-col gap-8">
+              <h3 className="text-white font-bold text-4xl px-6 text-center pt-20 pb-10">Compromiso con el Medio Ambiente</h3>
+              <p className="px-6 mb-8 text-white text-xl tracking-wider leading-relaxed text-center">En BLENZUS S.A.S., estamos firmemente comprometidos con la preservación del medio ambiente y la promoción de prácticas sostenibles en todas nuestras operaciones. Reconocemos la importancia de proteger y conservar los recursos naturales para las generaciones futuras, y por ello integramos estos valores en cada aspecto de nuestro negocio:</p>
+              <ul className="px-6 text-center gap-12 sm:gap-8 flex-wrap text-white flex justify-evenly my-10 mb-12">
+                <li className="flex flex-col items-center gap-2">
+                  <FaTree className="text-[36px]" />
+                  <p className="text-xl">
+                    Eficiencia Ambiental
+                  </p>
+                </li>
+                <li className="flex flex-col items-center gap-2">
+                  <MdBiotech className="text-[38px]" />
+                  <p className="text-xl">
+                    Innovación Sostenible
+                  </p>
+                </li>
+                <li className="flex flex-col items-center gap-2">
+                  <FaBook  className="text-[36px]" />
+                  <p className="text-xl">
+                    Educación y Sensibilización
+                  </p>
+                </li>
+                <li className="flex flex-col items-center gap-2">
+                  <FaHandsHelping  className="text-[38px]" />
+                  <p className="text-xl">
+                    Colaboración y Compromiso
+                  </p>
+                </li>
+              </ul>
+              <p className="p-6 text-white text-xl tracking-wider leading-relaxed text-center pb-20">Asumimos nuestro papel como agentes de cambio y nos esforzamos por liderar con el ejemplo en la adopción de prácticas empresariales responsables y respetuosas con el medio ambiente. Estamos comprometidos a seguir avanzando en esta dirección, contribuyendo así a la construcción de un mundo mejor para las generaciones venideras.</p>
             </div>
           </div>
         </section>
