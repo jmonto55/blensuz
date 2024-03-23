@@ -198,7 +198,7 @@ const App = () => {
               <div className="w-full font-bold flex justify-evenly flex-wrap mb-10">
                 <div className="flex items-center justify-center gap-2">
                   <MdEmail className="text-xl" />
-                  <p>logisticablensuz@gmail.com</p>
+                  <p>logistica@blensuz.com</p>
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <FaPhone className="text-xl" />
