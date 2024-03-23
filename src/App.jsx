@@ -42,7 +42,7 @@ const App = () => {
     {service: "Asesoría en comercio internacional", perks: ["Análisis de mercados nacionales e internacionales", "Asesoramiento en regulaciones y normativas del comercio exterior", "Estrategias de entrada a nuevos mercados"], picture: header},
     {service: "Gestión de exportaciones", perks: ["Búsqueda y selección de compradores/mercados potenciales", "Negociación de términos y condiciones comerciales", "Preparación y tramite de documentos de exportación", "Coordinación logística y trasporte nacional e internacional"], picture: importt},
     {service: "Gestión de importaciones", perks: ["Negociación de compras y contratos nacionales e internacional", "Gestión de aduanas y tramitación de documentación", "Coordinación en la recepción y distribución de mercancías"], picture: exportt},
-    {service: "Importación de vehículos", perks: ["Análisis de mercados nacionales e internacionales", "Asesoramiento en regulaciones y normativas del comercio exterior", "Estrategias de entrada a nuevos mercados"], picture: car1},
+    {service: "Importación de vehículos", perks: ["Trámites Simplificados: Nos ocupamos de todos los trámites de importación, haciendo el proceso más fácil para ti", "Variedad Global de Vehículos: Ofrecemos una amplia gama de vehículos de todo el mundo para elegir", "Seguimiento Personalizado: Te mantenemos informado en cada etapa del proceso de importación"], picture: car1},
     {service: "Logística y distribución", perks: ["Servicios logísticos integrales: Transporte Marítimo, aéreo y terrestre", "Almacenamiento, manejo, distribución", "Seguimiento y control"], picture: logistics},
     {service: "Consultoria personalizada", perks: ["Manejo de procesos de exportación e importación", "Asesoramiento personalizado de acuerdo a tus requerimientos específicos", "Estrategias de entrada a nuevos mercados"], picture: consult},
   ];
@@ -96,10 +96,10 @@ const App = () => {
             </div>
           </div>
         </section>
-        <section id="servicios" className="pb-20 text-white opacity-100 relative w-full bg-[#151625]">
+        <section id="servicios" className="pb-28 text-white opacity-100 relative w-full bg-[#151625]">
           <Modal open={open} onClose={() => setOpen(false)}>
             <div className="flex text-start flex-wrap justify-evenly gap-4">
-              <div className="w-1/2 min-w-[350px]">
+              <div className="w-1/2 min-w-[350px] flex flex-col items-center">
                 <h3 className="text-start font-bold text-4xl mb-8">{modalData.service}</h3>
                 <img src={modalData.picture} alt="Service" className="w-5/6 rounded-xl" />
               </div>
@@ -185,7 +185,7 @@ const App = () => {
                   </p>
                 </li>
               </ul>
-              <p className="p-6 text-white text-xl tracking-wider leading-relaxed text-center pb-20">Asumimos nuestro papel como agentes de cambio y nos esforzamos por liderar con el ejemplo en la adopción de prácticas empresariales responsables y respetuosas con el medio ambiente. Estamos comprometidos a seguir avanzando en esta dirección, contribuyendo así a la construcción de un mundo mejor para las generaciones venideras.</p>
+              <p className="p-6 text-white text-xl tracking-wider leading-relaxed text-center pb-28">Asumimos nuestro papel como agentes de cambio y nos esforzamos por liderar con el ejemplo en la adopción de prácticas empresariales responsables y respetuosas con el medio ambiente. Estamos comprometidos a seguir avanzando en esta dirección, contribuyendo así a la construcción de un mundo mejor para las generaciones venideras.</p>
             </div>
           </div>
         </section>
@@ -197,7 +197,7 @@ const App = () => {
               <div className="font-bold w-full flex justify-evenly mb-20 text-md flex-wrap">
                 <div className="flex items-center gap-2">
                   <FaLocationDot className="text-xl" />
-                  <p>Avenida 29C #25-13 Cartagena, Bolivar, Colombia</p>
+                  <p>Avenida 29C #25-13 Cartagena, Bolívar, Colombia</p>
                 </div>
                 <p>NIT 901346968-8</p>
               </div>
@@ -233,7 +233,6 @@ const App = () => {
           <p>2024 Blensuz SAS, all rights reserved</p>
           <ScrollUpButton/>
         </footer>
-        
       </main>
     </div>
   )
